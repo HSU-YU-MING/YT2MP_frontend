@@ -1,7 +1,7 @@
 document.getElementById("downloadBtn").addEventListener("click", async () => {
   const url = document.getElementById("urlInput").value;
   const status = document.getElementById("status");
-  const apiUrl = "https://yt2mp3web-production.up.railway.app/"; // 替換成你的 Railway 後端
+  const apiUrl = "https://yt2mp3web-production.up.railway.app/download";
 
   if (!url) {
     status.textContent = "請輸入 YouTube 連結！";
