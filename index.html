@@ -1,30 +1,19 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>YT2MP3 轉換器</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>YT2MP3 線上轉換工具</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container mt-5">
-    <div class="card shadow p-4 text-center">
-      <h1 class="mb-4">YT2MP3 線上轉換工具</h1>
-
-      <input id="urlInput" class="form-control mb-3" type="text" placeholder="請貼上 YouTube 連結">
-
-      <input id="filenameInput" class="form-control mb-3" type="text" placeholder="自訂檔案名稱（選填）">
-
-      <button id="downloadBtn" class="btn btn-success">下載 MP3</button>
-
-      <div class="mt-4">
-        <div class="progress d-none" id="progressContainer">
-          <div id="progressBar" class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%">0%</div>
-        </div>
-        <p class="mt-3 text-muted" id="status"></p>
-      </div>
-    </div>
+  <div class="card">
+    <h1>YT2MP3 線上轉換工具</h1>
+    <input type="text" id="urlInput" placeholder="請貼上 YouTube 連結">
+    <input type="text" id="filenameInput" placeholder="輸入檔案名稱（可選）">
+    <button id="downloadBtn">下載 MP3</button>
+    <progress id="progressBar" max="100" value="0"></progress>
+    <div id="status"></div>
   </div>
 
   <script src="script.js"></script>
